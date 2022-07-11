@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFS</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="note.html">Notes</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+      <h1>Our Certificate & Online Program For 2022</h1>     
+</section>
+<!-- -------java script----------- -->
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+</script>
+<!-- ----Blog page content--------- -->
+<section class="blog-content">
+  <div class="row">
+    <div class="blog-left">
+    <img src="images/cr.jpg">
+    <h2>Our Certificate & Online Programs For 2022</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ducimus delectus autem nemo, necessitatibus distinctio assumenda qui quod rerum adipisci hic perspiciatis doloribus, deserunt laudantium possimus voluptatem, quasi dolores molestiae?</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ducimus delectus autem nemo, necessitatibus distinctio assumenda qui quod rerum adipisci hic perspiciatis doloribus, deserunt laudantium possimus voluptatem, quasi dolores molestiae?</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ducimus delectus autem nemo, necessitatibus distinctio assumenda qui quod rerum adipisci hic perspiciatis doloribus, deserunt laudantium possimus voluptatem, quasi dolores molestiae?</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ducimus delectus autem nemo, necessitatibus distinctio assumenda qui quod rerum adipisci hic perspiciatis doloribus, deserunt laudantium possimus voluptatem, quasi dolores molestiae?</p>
+    <div class="comment-box">
+      <h3>Leave a comment</h3>
+      <form class="comment-form">
+        <input type="text" placeholder="Enter Name">
+        <input type="email" placeholder="Enter Email">
+        <textarea rows="5" placeholder="Your comment"></textarea>
+        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+
+      </form>
+
+    </div>
+  </div>
+    <div class="blog-right">
+      <h3>Post Categories</h3>
+      <div>
+        <span>Data Science</span>
+        <span>13</span>
+        </div>
+      <div>
+        <span>JAVA</span>
+        <span>24</span>
+        </div>
+      <div>
+        <span>C++</span>
+        <span>11</span>
+        </div>
+      <div>
+        <span>Python</span>
+        <span>35</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<!-- ----footer----- -->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Good note-taking will improve your active listening,<br> comprehension of material, and retention. </p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i>
+    <i class="fa fa-university"></i>
+
+  </div>
+  <p>Made By <i class="fa fa-heart-o"></i> Mr.Anubhav Aggarwal</p>
+</section>
+</body>
+</html>

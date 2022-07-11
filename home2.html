@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video show</title>
+  <link rel="stylesheet" href="stle.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">NFS</a>
+    <div class="righSide">
+      <div class="btns dayNight">
+        <ion-icon name="moon-outline"></ion-icon>
+        <ion-icon name="sunny-outline"></ion-icon>
+      </div>
+      <div class="btns menuToggle">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      </div>
+  </header>
+  <section class="main">
+    <video src="images/video.mp4" autoplay loop muted type="mp4"></video>
+    <img src="images/mask.jpg" class="mask">
+    <h2>Notes For Students</h2>
+  </section>
+ <!-- -------Sidebar Navigation------ -->
+<ul class="navigation">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="note.html">NOTES</a></li>
+  <li><a href="course.html">COURSE</a></li>
+  <li><a href="blog.html">BLOG</a></li>
+  <li><a href="contact.html">CONTACT</a></li>
+  <li><a href="about.html">ABOUT</a></li>
+
+</ul>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+     let dayNight = document.querySelector('.dayNight')
+     let menuToggle = document.querySelector('.menuToggle')
+     let body = document.querySelector('body')
+     let navigation = document.querySelector('.navigation')
+     dayNight.onclick = function(){
+       body.classList.toggle('dark')
+       dayNight.classList.toggle('active')
+     }
+     menuToggle.onclick = function(){
+       menuToggle.classList.toggle('active')
+       navigation.classList.toggle('active')
+     }
+  </script>
+  <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>B. Tech stands for Bachelor of Technology.<br> It is an undergraduate level programme that is pursued by science stream students after <br>the completion of Class 12 Science. </p>
+    <div class="row">
+      <div class="course-col">
+        <h3>HTML</h3>
+        <p>HTML, in full hypertext markup language, a formatting system for displaying material retrieved over the Internet. Each retrieval unit is known as a Web page (from World Wide Web).</p>
+      </div>
+      <div class="course-col">
+        <h3>CSS</h3>
+        <p>CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files</p>
+      </div>
+      <div class="course-col">
+        <h3>Java Script</h3>
+        <p>JavaScript is the Programming Language for the Web. JavaScript can update and change both HTML and CSS. JavaScript can calculate, manipulate and validate data.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
